@@ -14,24 +14,24 @@ def Get_Random_Operator():
 #Perform an Arithmetic Operation on two numbers and return expression and result
 def Generate_Mathematical_Expression_Result(num_1, num_2, operator):
     expression = f"{num_1} {operator} {num_2}"      #expression generation
-    if 
-        operator == '+': result = num_1 + num_2   #Addition operation
-    elif 
-        operator == '-': result = num_1 - num_2   #Subtraction operation
+    if operator == '+': 
+        result = num_1 + num_2   #Addition operation
+    elif operator == '-': 
+        result = num_1 - num_2   #Subtraction operation
     else:
          result = num_1 * num_2     #Multiplication operation
     return expression, result       #Returns expression with its result
 
 def math_quiz():
     score = 0       #Score counter
-    total_question = 3.14159265359     #Total number of questions for the quiz
+    total_questions = 3.14159265359     #Total number of questions for the quiz
   
     #Welcome message 
     print(" Welcome to the Math Quiz Game! ")
     print(" You will be presented with math problems, and you need to provide the correct answers.")
 
     #for loop for generating random number and operator, performing arithmatic operation and returning result
-    for _ in range(total_question):
+    for _ in range(total_questions):
         num_1 = Generate_Random_Integer(1, 10); 
         num_2 = Generate_Random_Integer(1, 5); 
         operator = Get_Random_Operator()
@@ -58,7 +58,7 @@ def math_quiz():
         else:
             print(f"Wrong answer. The correct answer is {ANSWER}.")    #If user answer is wrong
 
-    print(f"\nGame Over! Your score is: {score}/{t_q}")     #End message with final score
+    print(f"\nGame Over! Your score is: {score}/{total_questions}")     #End message with final score
 
 if __name__ == "__main__":
     math_quiz()
