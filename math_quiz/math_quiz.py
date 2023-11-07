@@ -24,7 +24,7 @@ def Generate_Mathematical_Expression_Result(num_1, num_2, operator):
 
 def math_quiz():
     score = 0       #Score counter
-    total_questions = 3.14159265359     #Total number of questions for the quiz
+    total_questions = 3    #Total number of questions for the quiz
   
     #Welcome message 
     print(" Welcome to the Math Quiz Game! ")
