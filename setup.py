@@ -6,6 +6,6 @@ setup(
     packages=find_packages(),
     install_requires=[
         "requests==2.26.0",
-        "numpy",
+        
     ],
 )
